@@ -6,7 +6,8 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import RolePage from './pages/RolePage';
-
+import AdminPage from './pages/AdminPage';
+import AdminRoute from './components/AdminRoute';
 function Protected({ children }) {
   const { user, loading } = useAuth()
   if (loading) {
@@ -45,6 +46,15 @@ export default function App() {
               </Protected>
             }
           />
+          <Route
+            path="/admin/users"
+            element={
+              <AdminRoute>
+                <AdminPage />
+              </AdminRoute>
+            }
+          />
+          
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>

@@ -56,6 +56,78 @@
             "status": "not_started"
           }
         ]
+      },
+      {
+        "id": 1003,
+        "track_id": 101,
+        "level_number": 3,
+        "title": "CI/CD Pipelines",
+        "resources": [
+          {
+            "id": 5005,
+            "level_id": 1003,
+            "resource_type": "course",
+            "title": "GitHub Actions Mastery",
+            "overview": "Automating testing and deployment workflows.",
+            "status": "not_started"
+          },
+          {
+            "id": 5006,
+            "level_id": 1003,
+            "resource_type": "article",
+            "title": "Jenkins vs. GitLab CI",
+            "overview": "Comparing modern continuous integration tools.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 1004,
+        "track_id": 101,
+        "level_number": 4,
+        "title": "Infrastructure as Code",
+        "resources": [
+          {
+            "id": 5007,
+            "level_id": 1004,
+            "resource_type": "video",
+            "title": "Terraform Crash Course",
+            "overview": "Provisioning AWS resources declaratively.",
+            "status": "not_started"
+          },
+          {
+            "id": 5008,
+            "level_id": 1004,
+            "resource_type": "article",
+            "title": "Managing Terraform State",
+            "overview": "Best practices for state files and locking.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 1005,
+        "track_id": 101,
+        "level_number": 5,
+        "title": "Container Orchestration",
+        "resources": [
+          {
+            "id": 5009,
+            "level_id": 1005,
+            "resource_type": "certification",
+            "title": "Certified Kubernetes Administrator (CKA)",
+            "overview": "Advanced cluster management and debugging.",
+            "status": "not_started"
+          },
+          {
+            "id": 5010,
+            "level_id": 1005,
+            "resource_type": "video",
+            "title": "Helm Charts Explained",
+            "overview": "Package management for Kubernetes.",
+            "status": "not_started"
+          }
+        ]
       }
     ]
   },
@@ -89,6 +161,762 @@
             "resource_type": "article",
             "title": "RESTful API Best Practices",
             "overview": "Status codes, standard methods, and pagination.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 2002,
+        "track_id": 102,
+        "level_number": 2,
+        "title": "Database Design & SQL",
+        "resources": [
+          {
+            "id": 6003,
+            "level_id": 2002,
+            "resource_type": "course",
+            "title": "PostgreSQL for Developers",
+            "overview": "Advanced queries, indexing, and normal forms.",
+            "status": "not_started"
+          },
+          {
+            "id": 6004,
+            "level_id": 2002,
+            "resource_type": "article",
+            "title": "Understanding ACID Properties",
+            "overview": "How databases ensure data integrity.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 2003,
+        "track_id": 102,
+        "level_number": 3,
+        "title": "Authentication & Authorization",
+        "resources": [
+          {
+            "id": 6005,
+            "level_id": 2003,
+            "resource_type": "video",
+            "title": "OAuth2 and JWTs",
+            "overview": "Implementing secure user sessions and token exchanges.",
+            "status": "not_started"
+          },
+          {
+            "id": 6006,
+            "level_id": 2003,
+            "resource_type": "course",
+            "title": "Securing Web APIs",
+            "overview": "Preventing common vulnerabilities like SQLi and XSS.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 2004,
+        "track_id": 102,
+        "level_number": 4,
+        "title": "Caching & Message Queues",
+        "resources": [
+          {
+            "id": 6007,
+            "level_id": 2004,
+            "resource_type": "article",
+            "title": "Redis vs Memcached",
+            "overview": "When and how to use in-memory data stores.",
+            "status": "not_started"
+          },
+          {
+            "id": 6008,
+            "level_id": 2004,
+            "resource_type": "video",
+            "title": "Asynchronous Tasks with Celery",
+            "overview": "Offloading heavy computation to background workers.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 2005,
+        "track_id": 102,
+        "level_number": 5,
+        "title": "System Architecture & Scaling",
+        "resources": [
+          {
+            "id": 6009,
+            "level_id": 2005,
+            "resource_type": "course",
+            "title": "System Design Interview Prep",
+            "overview": "Designing scalable, distributed systems.",
+            "status": "not_started"
+          },
+          {
+            "id": 6010,
+            "level_id": 2005,
+            "resource_type": "article",
+            "title": "Microservices vs Monoliths",
+            "overview": "Evaluating architectural trade-offs.",
+            "status": "not_started"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "track_id": 103,
+    "name": "Frontend Engineer",
+    "overview": "Create stunning, responsive, and accessible user interfaces utilizing modern JavaScript frameworks and CSS architectures.",
+    "imageUrl": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?auto=format&fit=crop&q=80&w=600",
+    "current_level": 3,
+    "progressPercentage": 60,
+    "overallProgress": 60,
+    "levels": [
+      {
+        "id": 3001,
+        "track_id": 103,
+        "level_number": 1,
+        "title": "HTML, CSS & Accessibility",
+        "resources": [
+          {
+            "id": 7001,
+            "level_id": 3001,
+            "resource_type": "course",
+            "title": "Semantic HTML Fundamentals",
+            "overview": "Structuring the web for screen readers and SEO.",
+            "status": "completed"
+          },
+          {
+            "id": 7002,
+            "level_id": 3001,
+            "resource_type": "article",
+            "title": "Flexbox & Grid Layouts",
+            "overview": "Mastering modern CSS layout modules.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 3002,
+        "track_id": 103,
+        "level_number": 2,
+        "title": "JavaScript Deep Dive",
+        "resources": [
+          {
+            "id": 7003,
+            "level_id": 3002,
+            "resource_type": "course",
+            "title": "Advanced JS: Closures & Prototypes",
+            "overview": "Understanding the core engine of JavaScript.",
+            "status": "completed"
+          },
+          {
+            "id": 7004,
+            "level_id": 3002,
+            "resource_type": "video",
+            "title": "Async/Await and Promises",
+            "overview": "Handling asynchronous data fetching gracefully.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 3003,
+        "track_id": 103,
+        "level_number": 3,
+        "title": "Component-Driven UI (React)",
+        "resources": [
+          {
+            "id": 7005,
+            "level_id": 3003,
+            "resource_type": "course",
+            "title": "React Hooks in Depth",
+            "overview": "Managing state and side effects with functional components.",
+            "status": "in_progress"
+          },
+          {
+            "id": 7006,
+            "level_id": 3003,
+            "resource_type": "article",
+            "title": "The Virtual DOM Explained",
+            "overview": "How React optimizes UI rendering.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 3004,
+        "track_id": 103,
+        "level_number": 4,
+        "title": "State Management & Routing",
+        "resources": [
+          {
+            "id": 7007,
+            "level_id": 3004,
+            "resource_type": "video",
+            "title": "Redux Toolkit Tutorial",
+            "overview": "Global state management simplified.",
+            "status": "not_started"
+          },
+          {
+            "id": 7008,
+            "level_id": 3004,
+            "resource_type": "article",
+            "title": "React Router v6",
+            "overview": "Implementing dynamic client-side navigation.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 3005,
+        "track_id": 103,
+        "level_number": 5,
+        "title": "Web Performance & SSR",
+        "resources": [
+          {
+            "id": 7009,
+            "level_id": 3005,
+            "resource_type": "course",
+            "title": "Next.js Masterclass",
+            "overview": "Server-side rendering and static site generation.",
+            "status": "not_started"
+          },
+          {
+            "id": 7010,
+            "level_id": 3005,
+            "resource_type": "article",
+            "title": "Optimizing Core Web Vitals",
+            "overview": "Improving LCP, FID, and CLS scores.",
+            "status": "not_started"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "track_id": 104,
+    "name": "Data Scientist",
+    "overview": "Extract actionable insights from raw data using Python, statistical modeling, and machine learning techniques.",
+    "imageUrl": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=600",
+    "current_level": 4,
+    "progressPercentage": 80,
+    "overallProgress": 80,
+    "levels": [
+      {
+        "id": 4001,
+        "track_id": 104,
+        "level_number": 1,
+        "title": "Python for Data Analysis",
+        "resources": [
+          {
+            "id": 8001,
+            "level_id": 4001,
+            "resource_type": "course",
+            "title": "Pandas Data Wrangling",
+            "overview": "Cleaning and transforming datasets effectively.",
+            "status": "completed"
+          },
+          {
+            "id": 8002,
+            "level_id": 4001,
+            "resource_type": "video",
+            "title": "Data Visualization with Matplotlib",
+            "overview": "Creating impactful charts and graphs.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 4002,
+        "track_id": 104,
+        "level_number": 2,
+        "title": "Statistics & Probability",
+        "resources": [
+          {
+            "id": 8003,
+            "level_id": 4002,
+            "resource_type": "course",
+            "title": "Inferential Statistics",
+            "overview": "Hypothesis testing, p-values, and confidence intervals.",
+            "status": "completed"
+          },
+          {
+            "id": 8004,
+            "level_id": 4002,
+            "resource_type": "article",
+            "title": "Bayes' Theorem in Practice",
+            "overview": "Understanding conditional probability.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 4003,
+        "track_id": 104,
+        "level_number": 3,
+        "title": "Machine Learning Foundations",
+        "resources": [
+          {
+            "id": 8005,
+            "level_id": 4003,
+            "resource_type": "course",
+            "title": "Intro to Scikit-Learn",
+            "overview": "Implementing regression and classification models.",
+            "status": "completed"
+          },
+          {
+            "id": 8006,
+            "level_id": 4003,
+            "resource_type": "article",
+            "title": "Understanding Overfitting vs Underfitting",
+            "overview": "Bias-variance tradeoff explained.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 4004,
+        "track_id": 104,
+        "level_number": 4,
+        "title": "Advanced ML & Feature Engineering",
+        "resources": [
+          {
+            "id": 8007,
+            "level_id": 4004,
+            "resource_type": "video",
+            "title": "Gradient Boosting Machines",
+            "overview": "XGBoost and LightGBM tuning.",
+            "status": "in_progress"
+          },
+          {
+            "id": 8008,
+            "level_id": 4004,
+            "resource_type": "article",
+            "title": "Dimensionality Reduction",
+            "overview": "Using PCA to simplify feature spaces.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 4005,
+        "track_id": 104,
+        "level_number": 5,
+        "title": "Deep Learning & NLP",
+        "resources": [
+          {
+            "id": 8009,
+            "level_id": 4005,
+            "resource_type": "course",
+            "title": "PyTorch for Beginners",
+            "overview": "Building neural networks from scratch.",
+            "status": "not_started"
+          },
+          {
+            "id": 8010,
+            "level_id": 4005,
+            "resource_type": "video",
+            "title": "Transformer Architecture Explained",
+            "overview": "How self-attention powers modern LLMs.",
+            "status": "not_started"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "track_id": 105,
+    "name": "Cloud Security Engineer",
+    "overview": "Protect infrastructure, implement identity controls, and secure deployments across major cloud platforms.",
+    "imageUrl": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&q=80&w=600",
+    "current_level": 1,
+    "progressPercentage": 10,
+    "overallProgress": 10,
+    "levels": [
+      {
+        "id": 5001,
+        "track_id": 105,
+        "level_number": 1,
+        "title": "Cybersecurity Fundamentals",
+        "resources": [
+          {
+            "id": 9001,
+            "level_id": 5001,
+            "resource_type": "course",
+            "title": "CompTIA Security+ Prep",
+            "overview": "Foundational security concepts and risk management.",
+            "status": "in_progress"
+          },
+          {
+            "id": 9002,
+            "level_id": 5001,
+            "resource_type": "article",
+            "title": "The CIA Triad",
+            "overview": "Confidentiality, Integrity, and Availability.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 5002,
+        "track_id": 105,
+        "level_number": 2,
+        "title": "Identity & Access Management (IAM)",
+        "resources": [
+          {
+            "id": 9003,
+            "level_id": 5002,
+            "resource_type": "video",
+            "title": "AWS IAM Deep Dive",
+            "overview": "Roles, policies, and principle of least privilege.",
+            "status": "not_started"
+          },
+          {
+            "id": 9004,
+            "level_id": 5002,
+            "resource_type": "article",
+            "title": "Zero Trust Architecture",
+            "overview": "Moving beyond perimeter-based security.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 5003,
+        "track_id": 105,
+        "level_number": 3,
+        "title": "Network & Infrastructure Security",
+        "resources": [
+          {
+            "id": 9005,
+            "level_id": 5003,
+            "resource_type": "course",
+            "title": "Securing VPCs and Subnets",
+            "overview": "Network ACLs, Security Groups, and routing.",
+            "status": "not_started"
+          },
+          {
+            "id": 9006,
+            "level_id": 5003,
+            "resource_type": "video",
+            "title": "DDoS Mitigation Strategies",
+            "overview": "Using WAF and Shield to protect endpoints.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 5004,
+        "track_id": 105,
+        "level_number": 4,
+        "title": "Threat Detection & Incident Response",
+        "resources": [
+          {
+            "id": 9007,
+            "level_id": 5004,
+            "resource_type": "article",
+            "title": "Setting up CloudTrail and GuardDuty",
+            "overview": "Continuous monitoring and anomaly detection.",
+            "status": "not_started"
+          },
+          {
+            "id": 9008,
+            "level_id": 5004,
+            "resource_type": "course",
+            "title": "Incident Response Playbooks",
+            "overview": "Creating automated responses for security events.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 5005,
+        "track_id": 105,
+        "level_number": 5,
+        "title": "Compliance & DevSecOps",
+        "resources": [
+          {
+            "id": 9009,
+            "level_id": 5005,
+            "resource_type": "video",
+            "title": "Integrating Security into CI/CD",
+            "overview": "SAST, DAST, and container scanning.",
+            "status": "not_started"
+          },
+          {
+            "id": 9010,
+            "level_id": 5005,
+            "resource_type": "certification",
+            "title": "AWS Certified Security - Specialty",
+            "overview": "Validating advanced cloud security expertise.",
+            "status": "not_started"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "track_id": 106,
+    "name": "Product Manager",
+    "overview": "Bridge the gap between business, technology, and user experience to drive product vision, strategy, and execution.",
+    "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
+    "current_level": 2,
+    "progressPercentage": 35,
+    "overallProgress": 35,
+    "levels": [
+      {
+        "id": 6001,
+        "track_id": 106,
+        "level_number": 1,
+        "title": "Product Lifecycle & Market Basics",
+        "resources": [
+          {
+            "id": 11001,
+            "level_id": 6001,
+            "resource_type": "course",
+            "title": "Introduction to Product Management",
+            "overview": "Understand the core product lifecycle and basic market research.",
+            "status": "completed"
+          },
+          {
+            "id": 11002,
+            "level_id": 6001,
+            "resource_type": "article",
+            "title": "The Lean Product Playbook - Overview",
+            "overview": "Fundamentals of identifying customer needs.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 6002,
+        "track_id": 106,
+        "level_number": 2,
+        "title": "Agile Execution & Backlog Management",
+        "resources": [
+          {
+            "id": 11003,
+            "level_id": 6002,
+            "resource_type": "certification",
+            "title": "Certified Scrum Product Owner (CSPO)",
+            "overview": "Master writing user stories and prioritizing the backlog.",
+            "status": "in_progress"
+          },
+          {
+            "id": 11004,
+            "level_id": 6002,
+            "resource_type": "video",
+            "title": "Effective Sprint Planning",
+            "overview": "Collaborating with engineering teams to deliver value.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 6003,
+        "track_id": 106,
+        "level_number": 3,
+        "title": "Roadmapping & OKRs",
+        "resources": [
+          {
+            "id": 11005,
+            "level_id": 6003,
+            "resource_type": "certification",
+            "title": "Product School: Product Manager Certificate",
+            "overview": "Setting Objectives and Key Results (OKRs) and defining roadmaps.",
+            "status": "not_started"
+          },
+          {
+            "id": 11006,
+            "level_id": 6003,
+            "resource_type": "article",
+            "title": "Now, Next, Later Roadmaps",
+            "overview": "Moving away from strict timeline-based feature factories.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 6004,
+        "track_id": 106,
+        "level_number": 4,
+        "title": "Cross-Functional Leadership & GTM",
+        "resources": [
+          {
+            "id": 11007,
+            "level_id": 6004,
+            "resource_type": "course",
+            "title": "Pragmatic Institute - Foundations",
+            "overview": "Go-to-market strategies and cross-functional alignment.",
+            "status": "not_started"
+          },
+          {
+            "id": 11008,
+            "level_id": 6004,
+            "resource_type": "video",
+            "title": "Managing Stakeholder Conflict",
+            "overview": "Navigating competing priorities among executives and sales.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 6005,
+        "track_id": 106,
+        "level_number": 5,
+        "title": "Portfolio Strategy & Enterprise Vision",
+        "resources": [
+          {
+            "id": 11009,
+            "level_id": 6005,
+            "resource_type": "article",
+            "title": "Inspired: How to Create Tech Products Customers Love",
+            "overview": "Driving enterprise-wide product vision and culture.",
+            "status": "not_started"
+          },
+          {
+            "id": 11010,
+            "level_id": 6005,
+            "resource_type": "certification",
+            "title": "AIPMM Certified Innovation Leader",
+            "overview": "Managing multiple product lines and portfolio ROI.",
+            "status": "not_started"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "track_id": 107,
+    "name": "UX/UI Designer",
+    "overview": "Design intuitive, accessible, and beautiful digital experiences grounded in deep user research and interaction principles.",
+    "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600",
+    "current_level": 3,
+    "progressPercentage": 50,
+    "overallProgress": 50,
+    "levels": [
+      {
+        "id": 7001,
+        "track_id": 107,
+        "level_number": 1,
+        "title": "Design Principles & Empathy",
+        "resources": [
+          {
+            "id": 12001,
+            "level_id": 7001,
+            "resource_type": "course",
+            "title": "Google UX Design Certificate (Course 1)",
+            "overview": "Foundations of user empathy and basic design principles.",
+            "status": "completed"
+          },
+          {
+            "id": 12002,
+            "level_id": 7001,
+            "resource_type": "article",
+            "title": "Gestalt Principles of Design",
+            "overview": "Understanding visual hierarchy and grouping.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 7002,
+        "track_id": 107,
+        "level_number": 2,
+        "title": "Wireframing & Prototyping (Figma)",
+        "resources": [
+          {
+            "id": 12003,
+            "level_id": 7002,
+            "resource_type": "video",
+            "title": "Figma UI UX Design Essentials",
+            "overview": "Creating low and high-fidelity wireframes.",
+            "status": "completed"
+          },
+          {
+            "id": 12004,
+            "level_id": 7002,
+            "resource_type": "course",
+            "title": "Interactive Prototyping Masterclass",
+            "overview": "Adding animations, states, and micro-interactions.",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "id": 7003,
+        "track_id": 107,
+        "level_number": 3,
+        "title": "User Research & Accessibility",
+        "resources": [
+          {
+            "id": 12005,
+            "level_id": 7003,
+            "resource_type": "course",
+            "title": "Nielsen Norman Group - UX Basic Training",
+            "overview": "Conducting usability tests and contextual inquiries.",
+            "status": "in_progress"
+          },
+          {
+            "id": 12006,
+            "level_id": 7003,
+            "resource_type": "article",
+            "title": "WCAG 2.1 Guidelines Overview",
+            "overview": "Designing for color blindness, screen readers, and accessibility.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 7004,
+        "track_id": 107,
+        "level_number": 4,
+        "title": "Design Systems & Scalability",
+        "resources": [
+          {
+            "id": 12007,
+            "level_id": 7004,
+            "resource_type": "video",
+            "title": "Building a Design System in Figma",
+            "overview": "Managing auto-layout, variants, and component libraries.",
+            "status": "not_started"
+          },
+          {
+            "id": 12008,
+            "level_id": 7004,
+            "resource_type": "article",
+            "title": "Refactoring UI",
+            "overview": "Advanced aesthetic tweaks for polished, production-ready interfaces.",
+            "status": "not_started"
+          }
+        ]
+      },
+      {
+        "id": 7005,
+        "track_id": 107,
+        "level_number": 5,
+        "title": "Enterprise UX Strategy",
+        "resources": [
+          {
+            "id": 12009,
+            "level_id": 7005,
+            "resource_type": "certification",
+            "title": "Certified User Experience Professional (CUXP)",
+            "overview": "Driving organizational UX maturity and design ops.",
+            "status": "not_started"
+          },
+          {
+            "id": 12010,
+            "level_id": 7005,
+            "resource_type": "article",
+            "title": "Measuring UX ROI",
+            "overview": "Tying design metrics to critical business KPIs.",
             "status": "not_started"
           }
         ]

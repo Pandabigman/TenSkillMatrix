@@ -18,7 +18,7 @@ const itemVariants = {
 const SkillsCarousel = ({ enrolledTracks, onRoleSelect }) => {
   return (
     <div className="w-full py-8">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6 px-4 md:px-8">
+      <h2 className="text-2xl font-bold text-white-800 mb-6 px-4 md:px-8">
         Your Career Tracks
       </h2>
       

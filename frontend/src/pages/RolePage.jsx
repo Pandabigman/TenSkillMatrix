@@ -1,111 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-//import mockData from './mockEnrolledTracks.json';
+import mockData from '../api/mockEnrolledTracks.json'; // Simulated API response for track details
 
 const RolePage = () => {
   const { trackId } = useParams();
   const navigate = useNavigate();
   const [trackData, setTrackData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const mockData = [
-  {
-    "id": 1,
-    "track_id": 101,
-    "name": "DevOps Engineer",
-    "overview": "Master the art of CI/CD, cloud infrastructure, containerization, and automation to streamline software delivery.",
-    "imageUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=600",
-    "current_level": 2,
-    "progressPercentage": 45,
-    "overallProgress": 45,
-    "levels": [
-      {
-        "id": 1001,
-        "track_id": 101,
-        "level_number": 1,
-        "title": "Linux & Networking Fundamentals",
-        "resources": [
-          {
-            "id": 5001,
-            "level_id": 1001,
-            "resource_type": "course",
-            "title": "Linux Command Line Basics",
-            "overview": "Learn essential terminal commands and file permissions.",
-            "status": "completed"
-          },
-          {
-            "id": 5002,
-            "level_id": 1001,
-            "resource_type": "article",
-            "title": "Understanding TCP/IP and DNS",
-            "overview": "Core networking concepts for sysadmins.",
-            "status": "completed"
-          }
-        ]
-      },
-      {
-        "id": 1002,
-        "track_id": 101,
-        "level_number": 2,
-        "title": "Containerization (Docker)",
-        "resources": [
-          {
-            "id": 5003,
-            "level_id": 1002,
-            "resource_type": "video",
-            "title": "Docker in 100 Seconds",
-            "overview": "Quick overview of images, containers, and volumes.",
-            "status": "in_progress"
-          },
-          {
-            "id": 5004,
-            "level_id": 1002,
-            "resource_type": "certification",
-            "title": "Docker Certified Associate",
-            "overview": "Official certification preparation.",
-            "status": "not_started"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "track_id": 102,
-    "name": "Backend Engineer",
-    "overview": "Build scalable APIs, design efficient database schemas, and master server-side architecture using Python and Postgres.",
-    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
-    "current_level": 1,
-    "progressPercentage": 15,
-    "overallProgress": 15,
-    "levels": [
-      {
-        "id": 2001,
-        "track_id": 102,
-        "level_number": 1,
-        "title": "API Design & FastAPI",
-        "resources": [
-          {
-            "id": 6001,
-            "level_id": 2001,
-            "resource_type": "video",
-            "title": "FastAPI Crash Course",
-            "overview": "Setting up routers, dependencies, and Pydantic schemas.",
-            "status": "completed"
-          },
-          {
-            "id": 6002,
-            "level_id": 2001,
-            "resource_type": "article",
-            "title": "RESTful API Best Practices",
-            "overview": "Status codes, standard methods, and pagination.",
-            "status": "not_started"
-          }
-        ]
-      }
-    ]
-  }
-];
+  
 
 
 
