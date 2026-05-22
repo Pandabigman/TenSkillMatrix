@@ -5,6 +5,7 @@ import Nav from './components/Nav.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import RolePage from './pages/RolePage';
 
 function Protected({ children }) {
   const { user, loading } = useAuth()
@@ -36,9 +37,18 @@ export default function App() {
               </Protected>
             }
           />
+          <Route
+            path="/role/:trackId"
+            element={
+              <Protected>
+                <RolePage />
+              </Protected>
+            }
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
     </>
   )
 }
+  
