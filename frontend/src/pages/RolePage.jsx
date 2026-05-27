@@ -8,15 +8,10 @@ const RolePage = () => {
   const navigate = useNavigate();
   const [trackData, setTrackData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  
-
-
 
   useEffect(() => {
-    // Simulate fetching track data by ID
     const fetchTrack = async () => {
-      // In production: await fetch(`/api/tracks/${trackId}`)
-      await new Promise(resolve => setTimeout(resolve, 400)); // fake network delay
+      await new Promise(resolve => setTimeout(resolve, 400)); 
       const foundTrack = mockData.find(t => t.id === parseInt(trackId));
       setTrackData(foundTrack);
       setIsLoading(false);
@@ -42,6 +37,17 @@ const RolePage = () => {
     );
   }
 
+  // --- Smart Target Calculations ---
+  // Find the user's current level object to see what is pending
+  const currentLevelData = trackData.levels.find(l => l.level_number === trackData.current_level);
+  
+  // Count how many resources are not yet completed in their current level
+  const pendingResources = currentLevelData 
+    ? currentLevelData.resources.filter(r => r.status !== 'completed').length 
+    : 0;
+
+  const isTrackComplete = trackData.overallProgress === 100;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 15 }}
@@ -64,7 +70,7 @@ const RolePage = () => {
           <p className="text-gray-600 mb-6">{trackData.overview}</p>
           
           {/* Overall Progress Tracker */}
-          <div className="p-5 bg-emerald-50 border border-emerald-100 rounded-xl">
+          <div className="p-5 bg-emerald-50 border border-emerald-100 rounded-xl mb-6">
             <div className="flex justify-between items-center text-sm font-bold text-emerald-800 mb-2">
               <span>Overall Completion</span>
               <span>{trackData.overallProgress}%</span>
@@ -78,9 +84,36 @@ const RolePage = () => {
               />
             </div>
           </div>
+
+          {/* --- SMART TARGET BANNER --- */}
+          {!isTrackComplete && (
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+              className="p-5 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-xl text-white shadow-md flex items-center gap-5"
+            >
+              <div className="bg-white/20 p-3 rounded-full flex-shrink-0">
+                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-100 mb-1">
+                  Smart Target
+                </h3>
+                <p className="text-lg font-semibold leading-tight mb-1">
+                  Complete Level {trackData.current_level} in 2 weeks
+                </p>
+                <p className="text-sm text-emerald-50 opacity-90">
+                  You have <span className="font-bold text-white">{pendingResources}</span> resources left to finish this level. Keep up the momentum!
+                </p>
+              </div>
+            </motion.div>
+          )}
         </div>
 
-        {/* The 5 Levels Matrix */}
+        {/* The Levels Matrix */}
         <div className="space-y-8">
           {trackData.levels.map((level, index) => (
             <motion.div 
@@ -88,13 +121,25 @@ const RolePage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="border border-gray-100 rounded-xl p-6 bg-gray-50/50"
+              className={`border rounded-xl p-6 transition-colors ${
+                level.level_number === trackData.current_level 
+                  ? 'border-emerald-200 bg-emerald-50/30' 
+                  : 'border-gray-100 bg-gray-50/50'
+              }`}
             >
-              <div className="mb-4 border-b border-gray-200 pb-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-emerald-500">
-                  Level {level.level_number}
-                </span>
-                <h2 className="text-xl font-bold text-gray-800 mt-1">{level.title}</h2>
+              <div className="mb-4 border-b border-gray-200 pb-3 flex justify-between items-center">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-500">
+                    Level {level.level_number}
+                  </span>
+                  <h2 className="text-xl font-bold text-gray-800 mt-1">{level.title}</h2>
+                </div>
+                {/* Highlight current level tag */}
+                {level.level_number === trackData.current_level && (
+                  <span className="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">
+                    Current Focus
+                  </span>
+                )}
               </div>
 
               {/* Resources for this Level */}
@@ -107,7 +152,7 @@ const RolePage = () => {
                         ? 'bg-emerald-50 border-emerald-200' 
                         : resource.status === 'in_progress'
                         ? 'bg-amber-50 border-amber-200'
-                        : 'bg-white border-gray-200 shadow-sm'
+                        : 'bg-white border-gray-200 shadow-sm hover:border-emerald-300 cursor-pointer'
                     }`}
                   >
                     {/* Status Checkbox / Icon */}
